@@ -13,7 +13,7 @@ else:
     print('already add slim')
 
 import tensorflow as tf
-from nets.nasnet import nasnet                 #导出nasnet
+from slim.nets.nasnet import nasnet                 #导出nasnet
 slim = tf.contrib.slim
 
 import os
