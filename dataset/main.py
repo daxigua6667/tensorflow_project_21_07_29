@@ -19,6 +19,8 @@ print(tf.version.VERSION)
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 show_dataset = tfds.list_builders()
 
+print(show_dataset)
+
 # dataset = tfds.load("coil100", split="train", data_dir="C:/Users/daxigua/tensorflow_datasets/", download=False)
 dataset, dataset_info = tfds.load("coil100", split="train", with_info=True, as_supervised=True, batch_size=-1)
 # dataset_test = tfds.load("coil100", split="test")
